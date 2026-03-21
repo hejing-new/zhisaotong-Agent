@@ -66,7 +66,7 @@
 │ Chroma 向量数据库     │   │ 外部 API 矩阵                 │
 │ (PDF/TXT 维护指南)    │   │ 高德地图 (国内) / 阿里云 Qwen │
 └─────────────────────┘   └──────────────────────────────┘
-```text
+```
 
 
 ## 📂 目录结构
@@ -107,22 +107,25 @@ zhisaotong-Agent/
 ├── logs/                  # 系统日志目录 (自动生成)
 ├── md5.text               # 文档 MD5 去重记录
 └── README.md
-```bash
+```
 
 ⚙️ **配置指南**
 1. 阿里云百炼平台凭证
 系统通过 DashScope SDK 调用通义千问模型，请配置环境变量：
 # 建议在 .env 或系统环境变量中配置
+```bash
 export DASHSCOPE_API_KEY="your_dashscope_api_key"
+```bash
 注意：若使用 OpenAI 兼容格式调用，请确保变量名与代码中 ChatOpenAI 或相关封装一致。
 
 2. 高德地图 Web 服务配置
 编辑 config/agent.yml，接入实时地理位置与天气能力：
 
 # config/agent.yml
+```bash
 gaodekey: "你的高德API_KEY"         # 需申请 "Web服务" 类型 Key
 gaode_base_url: https://restapi.amap.com
-
+```bash
 
 🛠 **核心工具集 (Tools)**
 Agent 动态调用的 7 项核心技能：
