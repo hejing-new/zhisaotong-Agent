@@ -37,6 +37,7 @@
 具备完善的结构化日志记录（File + Console），支持对 Agent 每一轮 ReAct 决策过程的离线回溯与 Debug。
 
 ---
+## 🏗 系统架构图 (System Architecture)
 
 ┌────────────────────────────────────────────────────────┐
 │               Streamlit 交互前端 (app.py)                │
@@ -47,7 +48,7 @@
                │                             │
 ┌──────────────▼─────────────────────────────┴──────────┐
 │                  状态路由器 (State Router)               │
-│  [human_mode = True] ─────► 人工接管 & 工单打包渲染        │
+│  [human_mode = True] ─────► 人工接手 & 工单打包渲染        │
 │  [human_mode = False] ────► 激活 LangChain Agent        │
 └──────────────────────────┬─────────────────────────────┘
                            │
@@ -66,48 +67,46 @@
 └─────────────────────┘   └──────────────────────────────┘
 
 
+## 📂 目录结构
 
 ## 📂 目录结构
 
 zhisaotong-Agent/
-├── app.py                        # Streamlit 前端入口
-├── agent/
-│   ├── react_agent.py            # ReAct Agent 核心逻辑
-│   └── tools/
-│       ├── agent_tools.py        # 工具函数定义
-│       └── middleware.py         # Agent 中间件
-├── rag/
-│   ├── rag_service.py            # RAG 检索摘要服务
-│   └── vector_store.py           # Chroma 向量库管理
-├── model/
-│   └── factory.py                # 模型工厂（LLM + Embedding）
-├── utils/
-│   ├── config_handler.py         # YAML 配置加载器
-│   ├── logger_handler.py         # 日志工具
-│   ├── path_tool.py              # 路径工具
-│   ├── file_handler.py           # 文档加载（PDF/TXT）
-│   └── prompt_loader.py          # 提示词加载器
-├── config/
-│   ├── agent.yml                 # Agent 配置（高德 API Key 等）
-│   ├── rag.yml                   # 模型名称配置
-│   ├── chroma.yml                # 向量库配置
-│   └── prompts.yml               # 提示词文件路径
-├── prompts/
-│   ├── main_prompt.txt           # 主 ReAct 提示词
-│   ├── rag_summarize.txt         # RAG 摘要提示词
-│   └── report_prompt.txt         # 报告生成提示词
-├── data/
+├── app.py                 # Streamlit 前端入口
+├── agent/                 # Agent 核心逻辑
+│   ├── react_agent.py     # ReAct Agent 核心编排
+│   ├── tools/             # 工具函数定义
+│   │   ├── agent_tools.py # 工具具体实现
+│   │   └── middleware.py  # Agent 中间件 (监控/日志/切换)
+│   ├── rag/               # RAG 检索摘要服务
+│   │   ├── rag_service.py # 检索服务逻辑
+│   │   └── vector_store.py# Chroma 向量库管理
+│   ├── model/             # 模型工厂
+│   │   └── factory.py     # LLM + Embedding 实例化
+│   └── utils/             # 通用工具
+│       ├── config_handler.py # YAML 配置加载
+│       ├── logger_handler.py # 日志工具
+│       ├── path_tool.py      # 路径管理
+│       ├── file_handler.py   # 文档加载 (PDF/TXT)
+│       └── prompt_loader.py  # 提示词加载
+├── config/                # 配置文件目录
+│   ├── agent.yml          # 高德 Key/外部路径配置
+│   ├── rag.yml            # 模型名称配置
+│   ├── chroma.yml         # 向量库参数配置
+│   └── prompts.yml        # 提示词路径映射
+├── prompts/               # 提示词文本
+│   ├── main_prompt.txt    # 主 ReAct 提示词
+│   ├── rag_summarize.txt  # RAG 摘要提示词
+│   └── report_prompt.txt  # 报告生成提示词
+├── data/                  # 原始数据
 │   ├── 扫地机器人100问.pdf
-│   ├── 扫地机器人100问2.txt
-│   ├── 扫拖一体机器人100问.txt
 │   ├── 故障排除.txt
-│   ├── 维护保养.txt
-│   ├── 选购指南.txt
 │   └── external/
-│       └── records.csv           # 用户使用记录（外部数据）
-├── chroma_db/                    # Chroma 持久化目录（自动生成）
-├── logs/                         # 日志文件目录（自动生成）
-└── md5.text                      # 文档 MD5 去重记录
+│       └── records.csv    # 用户清扫记录 (外部数据)
+├── chroma_db/             # Chroma 持久化目录 (自动生成)
+├── logs/                  # 系统日志目录 (自动生成)
+├── md5.text               # 文档 MD5 去重记录
+└── README.md
 ```
 
 ⚙️ **配置指南**
