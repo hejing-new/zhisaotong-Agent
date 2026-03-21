@@ -115,7 +115,7 @@ zhisaotong-Agent/
 # 建议在 .env 或系统环境变量中配置
 ```bash
 export DASHSCOPE_API_KEY="your_dashscope_api_key"
-```bash
+```
 注意：若使用 OpenAI 兼容格式调用，请确保变量名与代码中 ChatOpenAI 或相关封装一致。
 
 2. 高德地图 Web 服务配置
@@ -125,7 +125,7 @@ export DASHSCOPE_API_KEY="your_dashscope_api_key"
 ```bash
 gaodekey: "你的高德API_KEY"         # 需申请 "Web服务" 类型 Key
 gaode_base_url: https://restapi.amap.com
-```bash
+```
 
 🛠 **核心工具集 (Tools)**
 Agent 动态调用的 7 项核心技能：
