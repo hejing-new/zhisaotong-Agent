@@ -1,0 +1,7 @@
+2026-03-22 00:36:04,884 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 00:36:04,884 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 退货！！！
+2026-03-22 00:36:06,488 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-22 00:36:06,490 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '退货政策 扫地机器人'}
+2026-03-22 00:36:08,933 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-22 00:36:09,586 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 00:36:09,590 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人支持7天无理由退货，需保持商品完好、配件齐全，并保留原始包装。

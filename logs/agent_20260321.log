@@ -1,0 +1,57 @@
+2026-03-21 19:11:41,631 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-21 19:11:41,633 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 人工
+2026-03-21 19:12:00,714 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-21 19:12:00,714 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 人工
+2026-03-21 19:12:17,860 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-21 19:12:17,863 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 退钱‘
+2026-03-21 21:41:46,995 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-21 21:41:47,022 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 退钱
+2026-03-21 21:43:48,949 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-21 21:43:48,949 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 今天天气怎么样
+2026-03-21 21:43:52,806 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_location
+2026-03-21 21:43:52,810 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-21 21:43:56,313 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
+2026-03-21 21:43:56,470 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-21 21:43:56,473 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 伊犁哈萨克自治州
+2026-03-21 21:44:00,539 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-03-21 21:44:00,541 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city': '伊犁哈萨克自治州'}
+2026-03-21 21:44:01,278 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-03-21 21:44:02,495 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-21 21:44:02,496 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 城市伊犁哈萨克自治州天气为多云，气温14摄氏度，空气湿度29%，西南风≤3级，数据发布时间2026-03-21 21:32:22。
+2026-03-21 21:44:51,151 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-21 21:44:51,151 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 生成报告
+2026-03-21 21:45:00,571 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_id
+2026-03-21 21:45:00,575 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-21 21:45:00,576 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_id调用成功
+2026-03-21 21:45:00,670 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-21 21:45:00,672 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 1005
+2026-03-21 21:45:03,304 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_current_month
+2026-03-21 21:45:03,306 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-21 21:45:03,307 - agent - INFO - middleware.py:24 - [tool monitor]工具get_current_month调用成功
+2026-03-21 21:45:03,440 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-21 21:45:03,440 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 2025-04
+2026-03-21 21:45:13,893 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-03-21 21:45:13,898 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-21 21:45:13,899 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-03-21 21:45:14,357 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-03-21 21:45:14,358 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-03-21 21:45:17,466 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_external_data
+2026-03-21 21:45:17,466 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'user_id': '1005', 'month': '2025-04'}
+2026-03-21 21:45:17,470 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_external_data调用成功
+2026-03-21 21:45:19,378 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有9条消息。
+2026-03-21 21:45:19,379 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {"特征": "120㎡ | 老人 | 防滑砖", "效率": "手动操作占比:85%\\n定时清扫使用率:5次/周", "耗材": "电池衰减:28%\\n水箱使用率:50%", "对比": "语音控制功能已安装+操作熟练度提升"}
+2026-03-21 21:45:21,990 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-21 21:45:21,993 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人电池保养和维护建议'}
+2026-03-21 21:45:26,474 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:45:27,804 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有11条消息。
+2026-03-21 21:45:27,805 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 定期清洁电池接触点，避免长时间满电或完全放电存放，建议电量保持在20%-80%之间；长期不用时每月充电一次以防电池老化；使用原装充电器，避免高温高湿环境存放。
+2026-03-21 21:45:29,398 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-21 21:45:29,403 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人水箱使用和维护建议'}
+2026-03-21 21:45:33,662 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:45:35,260 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有13条消息。
+2026-03-21 21:45:35,261 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 使用前确保水箱安装到位，加水至最大水位线以下；建议使用纯净水以减少水垢；每次使用后清空剩余水并清洗水箱，避免细菌滋生；定期检查水箱密封圈是否老化或破损；长期不用时保持水箱干燥存放。
+2026-03-21 21:45:37,480 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-21 21:45:37,481 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '防滑砖地面扫地机器人使用建议'}
+2026-03-21 21:45:41,815 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:45:43,091 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有15条消息。
+2026-03-21 21:45:43,092 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 防滑砖地面使用扫地机器人时，建议选择具有强越障能力和高摩擦轮胎的机型，避免因地面粗糙导致打滑或卡困；同时确保机器人底部传感器清洁，以维持正常导航和避障功能。
