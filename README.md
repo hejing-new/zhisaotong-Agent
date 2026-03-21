@@ -37,6 +37,7 @@
 具备完善的结构化日志记录（File + Console），支持对 Agent 每一轮 ReAct 决策过程的离线回溯与 Debug。
 
 ---
+```text
 ## 🏗 系统架构图 (System Architecture)
 
 ┌────────────────────────────────────────────────────────┐
@@ -65,12 +66,11 @@
 │ Chroma 向量数据库     │   │ 外部 API 矩阵                 │
 │ (PDF/TXT 维护指南)    │   │ 高德地图 (国内) / 阿里云 Qwen │
 └─────────────────────┘   └──────────────────────────────┘
+```text
 
 
 ## 📂 目录结构
-
-## 📂 目录结构
-
+```bash
 zhisaotong-Agent/
 ├── app.py                 # Streamlit 前端入口
 ├── agent/                 # Agent 核心逻辑
@@ -107,7 +107,7 @@ zhisaotong-Agent/
 ├── logs/                  # 系统日志目录 (自动生成)
 ├── md5.text               # 文档 MD5 去重记录
 └── README.md
-```
+```bash
 
 ⚙️ **配置指南**
 1. 阿里云百炼平台凭证
