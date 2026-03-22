@@ -11,7 +11,6 @@
 
 **智扫通机器人智能客服**是一款面向扫地机器人/扫拖一体机器人用户的企业级 AI 智能体应用。系统以前端 Streamlit 为交互载体，后端基于现代化的 LangChain 架构构建 ReAct（Reasoning + Acting）Agent。
 
-本项目不仅实现了传统的 RAG 知识检索，更引入了**状态路由机制**与**多模态交互**，完美解决了 AI 客服常见的“死循环”、“啰嗦”以及“无法平滑移交”等痛点，提供媲美真人的丝滑服务体验。
 
 ## ✨ 核心特性与全新升级
 
@@ -177,6 +176,7 @@ graph TD
     D1 & D2 --> E[模型生成回复]
 ```
 <img width="2512" height="1448" alt="4b9e855dc1cae8df1cfa8695e2ab20a5" src="https://github.com/user-attachments/assets/38e6c5bd-1f9d-4787-b140-954405f699a9" />
+<img width="510" height="1468" alt="534b81bf6adac719863638279e5af759" src="https://github.com/user-attachments/assets/5cbb3dcf-70a7-46eb-9daf-0288aa81628a" />
 
 📚 **知识库管理 (RAG)**
 系统具备增量入库功能，支持 .txt 与 .pdf 格式。
