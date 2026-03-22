@@ -15,3 +15,83 @@
 2026-03-22 00:37:49,026 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
 2026-03-22 00:37:49,109 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
 2026-03-22 00:37:49,110 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 未知城市
+2026-03-22 01:08:11,221 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 01:08:11,224 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 📊 请帮我生成本月使用报告
+2026-03-22 01:08:14,774 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-03-22 01:08:14,774 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-22 01:08:14,776 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-03-22 01:08:15,206 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 01:08:15,207 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-03-22 01:08:16,361 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_id
+2026-03-22 01:08:16,362 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-22 01:08:16,364 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_id调用成功
+2026-03-22 01:08:16,452 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-22 01:08:16,453 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 1010
+2026-03-22 01:08:18,449 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 01:08:18,450 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | ⚠️ 机器无法自动回充怎么办？
+2026-03-22 01:08:20,533 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-22 01:08:20,540 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人无法自动回充故障排查'}
+2026-03-22 01:08:20,944 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_current_month
+2026-03-22 01:08:20,946 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-22 01:08:20,949 - agent - INFO - middleware.py:24 - [tool monitor]工具get_current_month调用成功
+2026-03-22 01:08:24,359 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-22 01:08:26,394 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 01:08:26,395 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人无法自动回充的故障排查步骤包括：检查充电座是否通电、电源线是否连接正常；确认充电触点是否清洁无异物；确保机器人与充电座之间无障碍物且距离在有效范围内；查看机器人电量是否过低导致无法启动回充；重启机器人或恢复出厂设置尝试解决软件异常。
+2026-03-22 01:08:50,552 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 01:08:50,553 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 🧹 扫地机器人的滤网多久换一次？
+2026-03-22 01:08:52,249 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-22 01:08:52,249 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人滤网更换周期'}
+2026-03-22 01:08:53,865 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-22 01:08:54,564 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 01:08:54,564 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人滤网建议每3个月更换一次，若使用频繁或环境灰尘较多，可适当缩短更换周期。
+2026-03-22 01:09:23,748 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 01:09:23,749 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 维修
+2026-03-22 01:09:25,620 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-22 01:09:25,622 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人维修常见问题及处理方法'}
+2026-03-22 01:09:30,333 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-22 01:09:32,549 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 01:09:32,550 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人常见维修问题包括：边刷或主刷缠绕毛发异物，需定期清理；尘盒未安装到位或滤网堵塞，应重新安装或清洗滤网；电池续航下降，可能需更换电池；机器无法回充，检查充电座接触点是否脏污或位置是否偏移；轮子卡住导致行走异常，需清除轮子周围杂物。处理方法以清洁、复位和更换易损件为主。
+2026-03-22 01:10:13,331 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 01:10:13,332 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 退货！
+2026-03-22 01:10:15,734 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-22 01:10:15,734 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人退货政策'}
+2026-03-22 01:10:18,834 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-22 01:10:20,240 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 01:10:20,240 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人支持7天无理由退货，需保持商品完好、配件齐全，并保留原始包装。如因质量问题退货，运费由商家承担；非质量问题退货，运费由用户自理。具体政策以购买平台或品牌官方说明为准。
+2026-03-22 01:10:36,808 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 01:10:36,810 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 这机器太烂了，退钱！
+2026-03-22 18:52:41,277 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 18:52:41,278 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 🧹 扫地机器人的滤网多久换一次？
+2026-03-22 18:52:43,284 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-22 18:52:43,286 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人滤网更换周期'}
+2026-03-22 18:52:46,410 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-22 18:52:47,178 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 18:52:47,182 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人滤网建议每3个月更换一次，若使用频率较高或环境灰尘较多，可适当缩短更换周期。
+2026-03-22 18:53:11,359 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 18:53:11,359 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | ⚠️ 机器无法自动回充怎么办？
+2026-03-22 18:53:13,466 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-22 18:53:13,471 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人无法自动回充 故障排查'}
+2026-03-22 18:53:17,790 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-22 18:53:19,982 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 18:53:19,986 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人无法自动回充的可能原因包括：充电座未通电或接触不良、机器人底部充电触点脏污、回充路径被障碍物阻挡、电池老化或故障、导航系统异常导致无法定位充电座。建议依次检查充电座电源连接、清洁充电触点、清理回充路径、重启设备，若问题仍存在可联系售后检测电池或导航模块。
+2026-03-22 18:56:32,303 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 18:56:32,304 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 🧹 扫地机器人的滤网多久换一次？
+2026-03-22 18:56:34,126 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-22 18:56:34,127 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人滤网更换周期'}
+2026-03-22 18:56:36,363 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-22 18:56:37,207 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 18:56:37,208 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人滤网建议每2-3个月更换一次，若使用频率较高或环境灰尘较多，可适当缩短更换周期。
+2026-03-22 18:56:47,558 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 18:56:47,559 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | ⚠️ 机器无法自动回充怎么办？
+2026-03-22 18:56:50,327 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-22 18:56:50,329 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人无法自动回充故障排查'}
+2026-03-22 18:56:56,349 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-22 18:56:58,853 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 18:56:58,854 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人无法自动回充的故障排查步骤包括：检查充电座是否通电、电源线是否连接正常；确保充电座周围1.5米内无遮挡物或干扰源；清洁机器人充电触点和充电座金属片；确认机器人电量未完全耗尽（部分机型电量过低时无法回充）；重启机器人或恢复出厂设置；若问题仍存在，联系售后检测主板或传感器是否故障。
+2026-03-22 19:10:09,292 - agent - INFO - vector_store.py:96 - [加载知识库]D:\4.workspace\agent0309\zhisaotong-Agent\zhisaotong-Agent-master\data\1.txt 内容加载成功
+2026-03-22 19:10:09,296 - agent - INFO - vector_store.py:74 - [加载知识库]D:\4.workspace\agent0309\zhisaotong-Agent\zhisaotong-Agent-master\data\扫地机器人100问.pdf内容已经存在知识库内，跳过
+2026-03-22 19:10:09,300 - agent - INFO - vector_store.py:74 - [加载知识库]D:\4.workspace\agent0309\zhisaotong-Agent\zhisaotong-Agent-master\data\扫地机器人100问2.txt内容已经存在知识库内，跳过
+2026-03-22 19:10:09,305 - agent - INFO - vector_store.py:74 - [加载知识库]D:\4.workspace\agent0309\zhisaotong-Agent\zhisaotong-Agent-master\data\扫拖一体机器人100问.txt内容已经存在知识库内，跳过
+2026-03-22 19:10:09,307 - agent - INFO - vector_store.py:74 - [加载知识库]D:\4.workspace\agent0309\zhisaotong-Agent\zhisaotong-Agent-master\data\故障排除.txt内容已经存在知识库内，跳过
+2026-03-22 19:10:09,309 - agent - INFO - vector_store.py:74 - [加载知识库]D:\4.workspace\agent0309\zhisaotong-Agent\zhisaotong-Agent-master\data\维护保养.txt内容已经存在知识库内，跳过
+2026-03-22 19:10:09,312 - agent - INFO - vector_store.py:74 - [加载知识库]D:\4.workspace\agent0309\zhisaotong-Agent\zhisaotong-Agent-master\data\选购指南.txt内容已经存在知识库内，跳过

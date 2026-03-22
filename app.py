@@ -1,7 +1,10 @@
+import os
 import time
 
 import streamlit as st
 from agent.react_agent import ReactAgent
+from rag.vector_store import VectorStoreService
+from utils.path_tool import get_abs_path
 
 # 标题
 st.title("智扫通机器人智能客服")
@@ -111,7 +114,29 @@ with st.sidebar:
 
     for question in FAQ_BUTTONS:
         if st.button(question, key=f"faq_{question}", use_container_width=True):
-            process_user_input(question)
+            st.session_state.button_prompt = question
+
+    st.divider()
+
+    # 知识库上传区域
+    st.subheader("📚 知识库管理")
+    uploaded_file = st.sidebar.file_uploader("📤 上传知识库文档", type=["txt", "pdf"])
+
+    if uploaded_file is not None:
+        if st.sidebar.button("确认上传", use_container_width=True):
+            with st.spinner("正在保存并处理文档，请稍候..."):
+                # 保存文件到data目录
+                data_dir = get_abs_path("data")
+                file_path = os.path.join(data_dir, uploaded_file.name)
+
+                with open(file_path, "wb") as f:
+                    f.write(uploaded_file.getbuffer())
+
+                # 触发RAG服务更新
+                vs = VectorStoreService()
+                vs.load_document()
+
+            st.sidebar.success("✅ 文档已成功加入知识库！")
 
     st.divider()
 
@@ -126,6 +151,11 @@ with st.sidebar:
 
 # 用户输入提示词
 prompt = st.chat_input()
+
+# 检查是否有快捷按钮触发的提问
+if st.session_state.get("button_prompt"):
+    prompt = st.session_state.button_prompt
+    st.session_state.button_prompt = None
 
 if prompt:
     process_user_input(prompt)
