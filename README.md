@@ -176,6 +176,7 @@ graph TD
     
     D1 & D2 --> E[模型生成回复]
 ```
+<img width="2512" height="1448" alt="4b9e855dc1cae8df1cfa8695e2ab20a5" src="https://github.com/user-attachments/assets/38e6c5bd-1f9d-4787-b140-954405f699a9" />
 
 📚 **知识库管理 (RAG)**
 系统具备增量入库功能，支持 .txt 与 .pdf 格式。
