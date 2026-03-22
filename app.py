@@ -111,7 +111,7 @@ with st.sidebar:
 
     for question in FAQ_BUTTONS:
         if st.button(question, key=f"faq_{question}", use_container_width=True):
-            process_user_input(question)
+            st.session_state.button_prompt = question
 
     st.divider()
 
@@ -126,6 +126,11 @@ with st.sidebar:
 
 # 用户输入提示词
 prompt = st.chat_input()
+
+# 检查是否有快捷按钮触发的提问
+if st.session_state.get("button_prompt"):
+    prompt = st.session_state.button_prompt
+    st.session_state.button_prompt = None
 
 if prompt:
     process_user_input(prompt)
